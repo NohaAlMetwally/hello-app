@@ -3,10 +3,9 @@ kind: Deployment
 
 metadata:
   name: python-app
-  namespace: devops
 
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: frontend
@@ -18,7 +17,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: gcr.io/nohaproject-354114/latest-img-python
+          image: nohaalmetwally/python-only:latest
           ports:
             - containerPort: 8000
           env:
