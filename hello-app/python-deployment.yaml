@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: nohaalmetwally/python-only:latest
+          image: gcr.io/nohaproject-354114/latest-img-python
           ports:
             - containerPort: 8000
           env:
